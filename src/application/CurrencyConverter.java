@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 public class CurrencyConverter {
 	String input = JOptionPane.showInputDialog("Insira um valor:");
 	double receivedValue = Double.parseDouble(input);
+	Check check = new Check();
 	
 	public double realToDollar() {
 		double convertedValue = receivedValue * 0.21;
