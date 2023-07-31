@@ -6,6 +6,7 @@ public class TemperatureConverter {
 	
 	String input = JOptionPane.showInputDialog("Insira um valor de temperatura para converter");
 	double receivedTemperature = Double.parseDouble(input);	
+	Check check = new Check();
 	
 	public double celsiusToFahrenheit() {
 		double convertedTemperature = (receivedTemperature * 1.8) + 32;

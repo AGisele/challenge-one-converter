@@ -9,9 +9,9 @@ public class DialogBox {
 	public static void menu() {
 
 		String[] options = { "Conversor de Moeda", "Conversor de Temperatura" };
-		String selection = JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu", JOptionPane.PLAIN_MESSAGE,
-				null, options, options[0]).toString();
-
+		String selection = (String )JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu", JOptionPane.PLAIN_MESSAGE,
+				null, options, options[0]);
+		
 		switch (selection) {
 		case "Conversor de Moeda":
 			currencyConverterMenu();
